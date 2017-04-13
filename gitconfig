@@ -1,0 +1,31 @@
+[user]
+	name = liandecai
+	email = cailiande0@gmail.com
+[push]
+	default = current
+[core]
+	autocrlf = false
+	quotepath = off
+	excludesfile = /Users/liande/.gitignore_global
+[gui]
+	encoding = utf-8
+[merge]
+	tool = kdiff3
+[color]
+	ui = true
+[format]
+	pretty = oneline
+[diff]
+	tool = kdiff3
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
